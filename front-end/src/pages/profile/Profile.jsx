@@ -3,7 +3,6 @@ import User from '../../components/user/User.jsx';
 import Account from '../../components/account/Account.jsx';
 import dataAccount from '../../data/account_data.json';
 
-
 function Profile (){
   const token = localStorage.getItem("token") || sessionStorage.getItem("token");
 
