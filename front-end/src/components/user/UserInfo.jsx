@@ -92,7 +92,7 @@ function UserInfo({ setIsOpen }){
           onClick={closeEditor}
           />
       </div>
-      {errMsg && <p>{errMsg}</p>}
+      {errMsg && <p className="errMsg">{errMsg}</p>}
       </form>
       </section>
     </main> 

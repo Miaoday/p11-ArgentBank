@@ -12,7 +12,9 @@ export default function userReducer(state= initialState, action){
         status: "getSuccessful",
         userData: {
           ...state.userData,
-          userName: action.payload.userData.userName
+          userName: action.payload.userData.userName,
+          firstName: action.payload.userData.firstName,
+          lastName: action.payload.userData.lastName,
         },
         createdAt: action.payload.createdAt
       }

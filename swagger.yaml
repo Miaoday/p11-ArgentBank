@@ -37,12 +37,12 @@ paths:
     post:
       tags:
         - User Module
-      summary: Signup
-      description: API for Signup
+      summary: Sign up
+      description: API for Sign up
       parameters:
         - in: body
           name: body
-          description: Signup Payload
+          description: Sign up Payload
           required: true
           schema:
             $ref: '#/definitions/User'
@@ -50,7 +50,7 @@ paths:
         - application/json
       responses:
         '200':
-          description: Signup Successfully
+          description: Sign up Successfully
           schema:
             $ref: '#/definitions/ApiResponse'
         '400':
@@ -69,7 +69,7 @@ paths:
       # - application/json
       responses:
         '200':
-          description: User profile retrieved successully
+          description: User profile retrieved successfully
           schema:
             $ref: '#/definitions/ApiResponse'
         '400':
@@ -94,7 +94,7 @@ paths:
         - application/json
       responses:
         '200':
-          description: User profile retrieved successully
+          description: User profile retrieved successfully
           schema:
             $ref: '#/definitions/ApiResponse'
         '400':
@@ -119,7 +119,7 @@ paths:
         #- application/json
       responses:
         '200':
-          description: User account retrieved successully
+          description: User account retrieved successfully
           schema:
             $ref: '#/definitions/UserAccount'
         '401':
@@ -172,11 +172,11 @@ paths:
         #- application/json
       responses:
         '200':
-          description: User transaction detail created successully
+          description: User transaction detail created successfully
           schema:
             $ref: '#/definitions/UserTransaction'
         '400':
-          description: Invalid reauest
+          description: Invalid request
         '401':
           description: Unauthorized
         '404':
